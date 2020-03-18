@@ -6,6 +6,6 @@ port = 6888                # 设置端口号
 
 s.connect((host, port))
 s.send(b'ni hao ya')
-s.send(b'yayaya')
+s.send(bytes('我是客户端',encoding='utf-8'))
 print(s.recv(1024))
 s.close()
